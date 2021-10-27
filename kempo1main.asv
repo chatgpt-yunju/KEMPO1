@@ -1,5 +1,5 @@
 function kempo1main(input_filename)
-  %************声明全局变量************%
+  %*****声明全局变量*****%
   clear global
   warning off
 
