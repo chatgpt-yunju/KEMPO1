@@ -30,6 +30,14 @@ function kempo1main(input_filename)
   
   global flag_exit
   flag_exit = 0;
-  
+
+  %**************¶ÁÈ¡²ÎÊı**************%
+  if ~exist('input_filename')
+    input_filename = 'input_tmp.dat';  % default input filename
+  end
+  prm = input_param(input_filename);
+  if isempty(prm)
+    return
+  end
 end
 
