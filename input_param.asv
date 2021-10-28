@@ -7,9 +7,25 @@ function prm = input_param(input_filename)
   
   try
     [str1, str2] = textread(input_filename, ...
-                            '%s%s','delimiter','=;','commentstyle','matlab');
+                            '%s%s','delimiter','=;','commentstyle','matlab')
   catch
     errordlg(sprintf('Can''t open input file: %s',input_filename),'Error')
     return
   end
+  
+    
+  for l = 1:length(str1)
+    %value = eval(char(str2(l)));
+    value = eval(char(str2(l));    
+    prmname= char(strread(char(str1(l)),'%s'));
+    switch prmname
+    
+     case 'np'
+     prm.np = value
+     
+    end
+  end
+
+return;
+  
 end
