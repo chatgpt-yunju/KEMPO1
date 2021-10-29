@@ -46,8 +46,8 @@ function kempo1main(input_filename)
   
   [prm,ren] = renorm(prm);
   initial(prm, hdiag);
-% 
-%   x = position(x,vx);
+
+  x = position(x,vx);
 %   if prm.iex
 %     rho= charge(x);
 %     ex = poisson(ex, rho);
