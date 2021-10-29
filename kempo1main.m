@@ -41,11 +41,11 @@ function kempo1main(input_filename)
   end
   
   %***************≥ı ºªØ***************%
-  hdiag = diagnostics_init;
-%   colormap jet;
-%   
-%   [prm,ren] = renorm(prm);
-%   initial(prm, hdiag);
+  hdiag = diagnostics_init;%≥ı¥Œ’Ô∂œ
+  colormap jet;
+  
+  [prm,ren] = renorm(prm);
+  initial(prm, hdiag);
 % 
 %   x = position(x,vx);
 %   if prm.iex
