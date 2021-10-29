@@ -1,5 +1,5 @@
 %
-% read input parameters
+% read input parameters£¬2021-10-28
 %
 function prm = input_param(input_filename)
     
@@ -12,8 +12,6 @@ function prm = input_param(input_filename)
     errordlg(sprintf('Can''t open input file: %s',input_filename),'Error')
     return
   end
-  
-    
   
   for l = 1:length(str1)
     value = eval(char(str2(l)));
