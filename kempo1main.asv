@@ -42,15 +42,15 @@ function kempo1main(input_filename)
   
   %***************≥ı ºªØ***************%
   hdiag = diagnostics_init;
-%   colormap jet;
-%   
-%   [prm,ren] = renorm(prm);
-%   initial(prm, hdiag);
-% 
-%   x = position(x,vx);
-%   if prm.iex
-%     rho= charge(x);
-%     ex = poisson(ex, rho);
-%   end
+  colormap jet;
+  %--
+  [prm,ren] = renorm(prm);
+  initial(prm, hdiag);
+
+  x = position(x,vx);
+  if prm.iex
+    rho= charge(x);
+    ex = poisson(ex, rho);
+  end
 end
 
