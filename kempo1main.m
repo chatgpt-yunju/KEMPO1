@@ -48,9 +48,21 @@ function kempo1main(input_filename)
   initial(prm, hdiag);
 
   x = position(x,vx);
-%   if prm.iex
-%     rho= charge(x);
-%     ex = poisson(ex, rho);
-%   end
+  if prm.iex
+    rho= charge(x);
+    ex = poisson(ex, rho);
+  end
+  
+  %***************Main Loop***************%
+  jtime = 0;
+  jdiag = 1;
+  
+  %---diagnostics---%
+  hdiag = diagnostics(hdiag, jtime, jdiag); 
+  if prm.nplot == 0
+    return
+  end
+  
+  
 end
 

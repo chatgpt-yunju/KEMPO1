@@ -41,9 +41,9 @@ function kempo1main(input_filename)
   end
   
   %***************初始化***************%
-  hdiag = diagnostics_init;
+  hdiag = diagnostics_init;%初次诊断
   colormap jet;
-  %--
+  
   [prm,ren] = renorm(prm);
   initial(prm, hdiag);
 
@@ -52,5 +52,9 @@ function kempo1main(input_filename)
     rho= charge(x);
     ex = poisson(ex, rho);
   end
+  
+  %***************初始化***************%
+    
+  
 end
 
